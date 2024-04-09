@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: green;
+    color: yellow;
+    padding-top: 50px;
+    overflow-y: auto;
+    transition: width 2s ease;
+}
+
+.menu-lateral.expandir { 
+    width: 300px;
+}
+
+.menu-lateral .btn-expandir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+}
+
+.menu-lateral .item-menu {
+    padding: 10px;
+    transition: background-color .2s ease;
+}
+
+.menu-lateral .item-menu:hover {
+    background-color: blue;
+}
+
+.menu-lateral .item-menu ul li.ativo { 
+    background-color: aliceblue;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral a:hover {
+    background-color: blue;
+}
+
+.menu-lateral .icon {
+    margin-right: 10px;
+}
+
+.menu-lateral .txt-link {
+    font-weight: bold;
+}
